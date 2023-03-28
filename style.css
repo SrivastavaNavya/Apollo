@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 1448px; */
+    background-color: #1E1E1E;
+    font-family: 'Staatliches';
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    /* background: aqua; */
+    background: #1E1E1E;
+    width: 100%;
+    height: 80px;
+}
+
+.srm-logo{
+    width: 55px;
+    margin: 10px 20px;
+}
+
+nav ul{
+    opacity: 1;
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 50px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        opacity: 5;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        transition: 2s;
+        right: 10000px;
+    }
+    
+}
+
+/* Home */
+
+/* #home{
+    width: (100-80)vw;
+} */
+
+.home-ball {
+    display: block;
+    position: relative;
+    width: 49px;
+    height: 49px;
+    /* left: 96px;
+    top: 345px; */
+    right: 25px;
+    bottom: 10px;
+    background: #537FE7;
+    border-radius: 50%;
+}
+
+.vr {
+    width: (100-14)vw;
+    height: 1350vh;
+    border-left: solid 4px #537FE7;
+    margin-top: 350px;
+    margin-left: 118px;
+    /* display: flex; */
+}
+
+.view {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 280px;
+    left: 50px;
+    /* flex-direction: column-reverse; */
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+}
+
+.head1 {
+    position: relative;
+    display: inline;
+    top: 60px;
+    /* width: 690px;
+    height: 150px; */
+    /* left: 171px;
+    top: 175px; */
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 150px;
+    color: #FFFFFF;
+}
+
+.head2 {
+    position: relative;
+    /* width: 585px;
+    height: 188px; */
+    /* left: 173px;
+    top: 265px; */
+    display: inline;
+    /* top: 110px; */
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 188px;
+    color: #78C9F9;
+}
+
+.head3 {
+    position: relative;
+    bottom: 70px;
+    display: inline;
+    /* width: 591px;
+    height: 188px; */
+    /* left: 173px;
+    top: 385px; */
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 188px;
+    color: #FFFFFF;
+}
+
+.head4 {
+    position: relative;
+    display: inline;
+    bottom: 110px;
+    /* width: 592px;
+    height: 41px; */
+    /* left: 173px;
+    top: 537px; */
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 41px;
+    align-items: center;
+    color: #78C9F9;
+}
+
+/* @media only screen and (max-width: 719px) and (min-width: 511px) {
+    .head1 {
+        font-size: 70px;
+        top: 164px;
+    }
+
+    .head2 {
+        font-size: 90px;
+        top: 190px;
+    }
+
+    .head3 {
+        font-size: 90px;
+        top: 263px;
+    }
+
+    .head4 {
+        width: 255px;
+        font-size: 25px;
+        top: 451px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 510px) {
+    .head1 {
+        top: 228px;
+        left: 130px;
+        font-size: 38px;
+    }
+
+    .head2 {
+        top: 235px;
+        left: 130px;
+        font-size: 50px;
+    }
+
+    .head3 {
+        top: 279px;
+        left: 130px;
+        font-size: 50px;
+    }
+
+    .head4 {
+        width: 140px;
+        top: 420px;
+        left: 130px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .vr {
+        height: 5000vh;
+        margin-left: 60px;
+        top: 200px;
+    }
+
+    .home-ball {
+        left: 60px;
+    }
+
+    .circle{
+        left: 37px;
+    }
+} */
+
+.csi{
+    display: inline;
+    float: right;
+    padding-top: 85px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.csi-logo {
+    width: 332px;
+    height: 354px;
+    /* float: right; */
+    /* position: relative;
+    left: 700px;
+    top: -135px;
+    display: flex; */
+    /* position: relative;
+    top: -130px;
+    right: 75px; */
+}
+
+/* @media(max-width:1156px) {
+    .csi-logo {
+        width: 335px;
+        height: 250px;
+        padding-top: 55px;
+    }
+}
+
+@media(max-width: 1015px) {
+    .view {
+        flex-direction: column;
+    }
+
+    .csi-logo {
+        top: 250px;
+        left: 70px;
+    }
+}
+
+@media (max-width: 723px) {
+    .head1 {
+        top: 200px;
+    }
+
+    .head2 {
+        top: 250px;
+    }
+
+    .head3 {
+        top: 325px;
+    }
+
+    .csi-logo {
+        width: 295px;
+        height: 210px;
+        top: 100px;
+        left: 35px;
+    }
+}
+
+@media(max-width:510px) {
+    .head1 {
+        top: 230px;
+    }
+
+    .head3 {
+        top: 295px;
+    }
+
+    .head4 {
+        top: 400px;
+    }
+
+    .csi-logo {
+        width: 250px;
+        height: 165px;
+        top: 50px;
+        left: -15px;
+    }
+} */
